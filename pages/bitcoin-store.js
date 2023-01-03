@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function weweb() {
+export default function bitcoinstore() {
   return (
     <>
       <Head>
@@ -18,10 +18,10 @@ export default function weweb() {
       <main className={styles.main}>
         
         <div className={styles.container}>
-
+          Hello world
+          <Link href="/">Home</Link>
         </div>
-        Hello world
-        <Link href="/weweb">Home</Link>
+        
       </main>
     </>
   )

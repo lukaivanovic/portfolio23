@@ -16,8 +16,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        Hello world
-        <Link href="/weweb">Home</Link>
+      <div className={styles.container}>
+
+        <h1>Product design for startups and early-stage companies</h1>
+        <p>Looking to work on great products with great teams. Previous clients include corporations, agencies and startups. Open to EU and US opportunities.</p>
+
+        <Link href="/weweb">
+          <Image>
+            
+          </Image>
+
+          <h2>WeWeb</h2>
+          <h2>Build user interfaces on top of databases</h2>
+        </Link>
+
+        <Link href="/bitcoin-store">
+          <Image>
+            
+          </Image>
+
+          <h2>Bitcoin Store</h2>
+          <h2>Simply buy, sell and securely store cryptocurrencies</h2>
+        </Link>
+      </div>
       </main>
     </>
   )

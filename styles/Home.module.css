@@ -1,4 +1,9 @@
 .main {
-    background-color: red;
     height: 100vh;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 32px;
 }

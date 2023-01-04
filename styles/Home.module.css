@@ -1,9 +1,28 @@
-.main {
-    height: 100vh;
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 120px 32px;
 }
 
-.container{
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0 32px;
+
+.section{
+    margin-bottom: 80px;
+}
+
+.projectTitle{
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 0px;
+}
+
+.projectTitleHover{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 0px;
 }

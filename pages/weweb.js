@@ -3,8 +3,13 @@ import Link from "next/link"
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import testPic from '../public/test.png'
 
 const inter = Inter({ subsets: ['latin'] })
+
+function Header() {
+  return (<h1>Develop. Preview. Ship. 🚀</h1>)
+}
 
 export default function weweb() {
   return (
@@ -16,12 +21,24 @@ export default function weweb() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        
         <div className={styles.container}>
-
+          <div className={styles.section}> 
+            <h1>WeWeb - Build user interfaces on top of databases</h1>
+            <p>WeWeb is visual app-development platform where you can build user interfaces on top of your databases.</p>
+            <p>I’ve started helping out WeWeb in May of 2022 as their first dedicated designer and my job in the editor was to polish design, think and create new features and challenge the core principles of the software.</p>
+            <p>Outside of the editor we wanted to improve our visibility on social media and achieve growth with a website.</p>
+          </div>
+          
+          <div className={styles.section}> 
+            <h2>Typography</h2>
+            <p>Playing it safe</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
         </div>
-        Hello world
-        <Link href="/weweb">Home</Link>
       </main>
     </>
   )

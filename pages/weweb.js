@@ -37,7 +37,140 @@ export default function weweb() {
               alt="Picture of the author"
               width= "620"
             />
+            <p>One of the main trends that we observed at WeWeb is that our identity appeared fun and playful. However, as the company's focus shifted towards developing web applications and attracting a wider range of clients, including enterprises, we wanted to update our image to be more modern and functional. As a result, we decided to use Inter as our typography, which is a popular choice for the web today.</p>
+            <p>In the future, our goal is to incorporate elements of our original identity through the use of typography, while still maintaining a professional image.</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>The styles in our design follow a simple scale, with headings ranging from one to six on an almost linear scale. For most of the user interface, we use four sizes (10, 12, 14, and 16 pixels) in regular and medium weight, with equal line height.</p>
+            <p>One factor to consider when comparing Figma and the final product is that Figma uses a custom rendering engine that includes font smoothing, which is similar to anti-aliasing on the web. In our current implementation, we do not use this smoothing, which can result in a slight difference in appearance compared to the designs. However, anti-aliased fonts tend to appear slimmer, so it is necessary to adjust and use the different weights accordingly.</p>
           </div>
+
+          <div className={styles.section}> 
+            <h2>Refreshing the colors</h2>
+            <p>With a color refresh due, we’ve decided to make some quick improvements until we have the time to this properly. The result is improved contrast and a darker and cleaner dark mode.</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>WeWeb has a built-in dark mode feature that inverts the color ramps. While this is an easy solution, it can sometimes result in low contrast issues with certain elements. Additionally, using color ramps can lead to design debt, as the colors do not have semantic value.</p>
+            <p>To address these issues, we are implementing color tokens. Derived from the ramps, these tokens are named based on their function, allowing for more customization and control. For example, you can customize text, background, or other colors in any color mode without affecting other tokens with the same value. This approach is inspired by the way Figma handles their colors, as described in this talk.</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Components</h2>
+            <p>The next big thing</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>Ever since WeWeb came to existence in current version, the most requested feature was classes. Users coming from Webflow and code were very familiar with this and so they requested for this feature. For a long time the only reason for not implementing this was complexity and development time.</p>
+            <p>But as time went by, the product team was less and less convinced that this will be a good solution. When starting to use Webflow, classes felt like a natural and clean way to handling styles without code, but it quickly became very tiring to name classes and plan the styles. </p>
+            <p>So we thought about something a bit different - implementing components as seen in Figma and Framer.</p>
+            <p>Components are reusable blocks in their simplest form, but you can go very far with them. WeWeb always tries to be as close to the code as possible and this is why our components have properties, internal variables and triggers. </p>
+            <p></p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>In exploration, we went a step further and played with something called page components which are very similar to layouts in popular frameworks today. With page components you could quickly add alert system to all of your pages or change the top navigation to a side menu. </p>
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Workflow editor</h2>
+            <p>Playing it safe</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>One of the first things I worked with the WeWeb team is the workflow editor. This is something that hasn’t existed previously and it limited users ability to create complex actions with branching.</p>
+            <p>The result is the editor in which you can choose from plenty of prebuilt actions, splits and even custom code. Users can visually track the decision flow of the action and even test it.</p>
+            <p></p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Website</h2>
+            <p>Building a good website takes time</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <p>In August of 2022, we began the process of redesigning and rebuilding our website. We released a first version of the site that month, but it was not up to our desired standards due to our decision not to prioritize the brand's identity. </p>
+            <p>A month later, we made significant improvements by cutting pages that did not meet our quality standards and redesigning the home page. Tracking conversions closely, we made additional changes to the design and content of the site, leading to an increase in conversions. </p>
+            <p>However, we continued to strive for improvement and conducted another redesign of the home page. The new version of the website was finally released in January 2023 and we believe it now meets the standards of a startup website.</p>
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Staging environment</h2>
+            <p>Playing it safe</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Navigator</h2>
+            <p>Playing it safe</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Academy</h2>
+            <p>Playing it safe</p>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
+          <div className={styles.section}> 
+            <h2>Some more interface</h2>
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+            <Image
+              src={testPic}
+              alt="Picture of the author"
+              width= "620"
+            />
+          </div>
+
         </div>
       </main>
     </>

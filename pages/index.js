@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import testPic from '../public/test.png'
 import wewebPic from '../public/weweb.png'
 import Project from '../components/Project'
+import Images from '../public/bitcoin-store/bitcoin'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,8 +25,16 @@ export default function Home() {
 
           <div className={styles.section}>
             <h1>Product design for startups and early-stage companies</h1>
+            <p>22-year old currently living in Split, Croatia. Biggest goal is to craft something that is useful and elegant. Technical, occasionally coding.</p>
             <p>Looking to work on great products with great teams. Previous clients include corporations, agencies and startups. Open to EU and US opportunities.</p>
+            <p>Full project and experience available on inquiry. Open to relocation.</p>
           </div>
+
+          <Image
+            src = {Images.somePic}
+            width = '200px'
+            height = '200px'
+          />
           
 
           <Project

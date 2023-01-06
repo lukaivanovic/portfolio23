@@ -66,18 +66,18 @@ a {
 }
 
 h1 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -1.4px;
+  font-size: 40px;
+  font-weight: 563;
+  line-height: 40px;
+  letter-spacing: -1px;
   margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 44px;
-  letter-spacing: -1.4px;
+  font-size: 28px;
+  font-weight: 563;
+  line-height: 32px;
+  letter-spacing: -0.6px;
   margin-bottom: 16px;
   margin-top: 160px;
 }

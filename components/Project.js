@@ -5,7 +5,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import testPic from '../public/test.png'
 
-export default function Project({title, description, url}) {
+export default function Project({title, description, url, image}) {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
@@ -20,12 +20,9 @@ return (
             <h2 className={ isHovering ? styles.projectTitle : styles.projectTitleHover }>{title}</h2>
             <h2 className={ isHovering ? styles.projectTitle : styles.projectTitleHover }>{description}</h2>
             <Image
-                style={{
-                    opacity: isHovering ? '64%' : '100%'
-                }}
-                src={testPic}
+                src={image}
                 alt="Picture of the author"
-                width= "620"
+                className={styles.image}
             />
         </div>
     </Link>

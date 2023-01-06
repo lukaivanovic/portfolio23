@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import testPic from '../public/test.png'
+import wewebPic from '../public/weweb.png'
 import Project from '../components/Project'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -31,12 +32,14 @@ export default function Home() {
             title= "WeWeb"
             description= "Build user interfaces on top of databases"
             url = "weweb"
+            image = {wewebPic}
           />
 
           <Project
             title= "Bitcoin Store"
             description= "Simply buy, sell and securely store cryptocurrencies"
             url = "bitcoin-store"
+            image = {testPic}
           />
 
         </div>

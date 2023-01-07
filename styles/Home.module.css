@@ -10,6 +10,7 @@
     height: auto;
     margin-top: 16px;
     margin-bottom: 32px;
+    border-radius: 12px;
 }
 
 .section{
@@ -17,9 +18,9 @@
 }
 
 .projectTitle{
-    color: gray;
-    font-size: 18px;
-    font-weight: 500;
+    color: black;
+    font-size: 24px;
+    font-weight: 563;
     line-height: 24px;
     letter-spacing: -0.4px;
     margin-top: 0px;
@@ -27,11 +28,28 @@
 }
 
 .projectTitleHover{
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
+    color: gray;
+    font-size: 24px;
+    font-weight: 563;
     line-height: 24px;
     letter-spacing: -0.4px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.projectImage{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+}
+
+.label2{
+    font-size:14px;
+    color: gray;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 4px
 }

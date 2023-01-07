@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import Link from "next/link"
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import Link from "next/link"
 import styles from '../styles/Home.module.css'
 import testPic from '../public/test.png'
 import wewebPic from '../public/weweb.png'
 import Project from '../components/Project'
-import Images from '../public/bitcoin-store/bitcoin'
+import BitcoinPic from '../public/bitcoin-store/01-00.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,30 +24,24 @@ export default function Home() {
 
           <div className={styles.section}>
             <h1>Product design for startups and early-stage companies</h1>
-            <p>22-year old currently living in Split, Croatia. Biggest goal is to craft something that is useful and elegant. Technical, occasionally coding.</p>
-            <p>Looking to work on great products with great teams. Previous clients include corporations, agencies and startups. Open to EU and US opportunities.</p>
-            <p>Full project and experience available on inquiry. Open to relocation.</p>
+            <p>22-year old currently living in Split, Croatia. Want to work on well-built and useful products with great teams. Previous clients include corporations, agencies and startups. Technical, occasionally coding. Open to remote and relocation EU and US opportunities.</p>
+            <p>For more info and contact: <a>hi@ivanovicluka.co</a> / <a href='https://twitter.com/lukaivnvc'>twitter</a> / <a href='https://dribbble.com/lukaivanovic'>dribbble</a>.</p>
           </div>
-
-          <Image
-            src = {Images.somePic}
-            width = '200px'
-            height = '200px'
-          />
           
-
           <Project
             title= "WeWeb"
             description= "Build user interfaces on top of databases"
             url = "weweb"
             image = {wewebPic}
+            time = "Apr 2022 - present"
           />
 
           <Project
             title= "Bitcoin Store"
             description= "Simply buy, sell and securely store cryptocurrencies"
             url = "bitcoin-store"
-            image = {testPic}
+            image = {BitcoinPic}
+            time = "Nov 2021 - Jul 2022"
           />
 
         </div>

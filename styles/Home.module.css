@@ -53,3 +53,23 @@
     margin-bottom: 4px;
     margin-top: 4px
 }
+
+.icon{
+    width: 14px;
+    height: 14px;
+}
+
+.link{
+    color: black;
+}
+
+.link:hover{
+    color: gray;
+}
+
+.backLink{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 48px;
+}

@@ -1,4 +1,4 @@
-.container{
+.main{
     max-width: 720px;
     margin: 0 auto;
     padding: 120px 32px;
@@ -17,6 +17,20 @@
     margin-bottom: 80px;
 }
 
+.projects{
+    margin-top: 160px
+}
+
+.project{
+    margin-bottom: 80px;
+    transition: all .2s ease-out;
+}
+
+.project:hover{
+    transform: scale(0.98);
+}
+
+
 .projectTitle{
     color: black;
     font-size: 24px;
@@ -28,7 +42,7 @@
 }
 
 .projectTitleHover{
-    color: gray;
+    color: #363636;
     font-size: 24px;
     font-weight: 563;
     line-height: 24px;
@@ -41,13 +55,20 @@
     width: 100%;
     height: auto;
     margin-top: 0px;
-    margin-bottom: 8px;
     border-radius: 12px;
+}
+
+.projectImageHover{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    border-radius: 12px;
+    opacity: 0.98;
 }
 
 .label2{
     font-size:14px;
-    color: gray;
+    color: #363636;
     letter-spacing: -0.2px;
     font-weight: 500;
     margin-bottom: 4px;
@@ -61,14 +82,16 @@
 
 .link{
     color: black;
+    text-decoration: none;
 }
 
 .link:hover{
-    color: gray;
+    color: #363636;
 }
 
 .backLink{
     display: flex;
+    text-decoration: none;
     align-items: center;
     column-gap: 8px;
     margin-bottom: 48px;

@@ -12,17 +12,17 @@ export default function Project({title, description, url, image, time}) {
 return (
     <Link href={url}>
         <div
-        className={styles.section}
+        className={styles.project}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         >
 
-            
             <Image
                 src={image}
                 alt="Picture of the author"
-                className={styles.projectImage}
+                className={ isHovering ? styles.projectImageHover : styles.projectImage}
             />
+            
             <h2 className={ styles.label2 }>{title}</h2>
             <h2 className={ isHovering ? styles.projectTitleHover : styles.projectTitle }>{description}</h2>
             <p className={styles.label2}>{time}</p>

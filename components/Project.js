@@ -21,8 +21,9 @@ return (
                 src={image}
                 alt="Picture of the author"
                 className={ isHovering ? styles.projectImageHover : styles.projectImage}
+                placeholder="blur"
             />
-            
+
             <h2 className={ styles.label2 }>{title}</h2>
             <h2 className={ isHovering ? styles.projectTitleHover : styles.projectTitle }>{description}</h2>
             <p className={styles.label2}>{time}</p>

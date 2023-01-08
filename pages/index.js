@@ -29,7 +29,9 @@ export default function Home() {
           <div className={styles.section}>
             <h1>Product design for startups and early-stage companies</h1>
             <p>22-year old currently living in Split, Croatia. Want to work on well-built and useful products with great teams. Clients include Netguru, WeWeb, a big traditional bank, Teltech, Bitcoin Store and more.</p>
-            <p>Open to remote and relocation EU and US opportunities. For more info and contact: <a>hi@ivanovicluka.co</a> / <a href='https://twitter.com/lukaivnvc'>twitter</a> / <a href='https://dribbble.com/lukaivanovic'>dribbble</a>.</p>
+            <p>Open to EU and US opportunities. Remote and relocation friendly. For more info and contact: <a>hi@ivanovicluka.co</a> / <a href='https://twitter.com/lukaivnvc'>twitter</a> / <a href='https://dribbble.com/lukaivanovic'>dribbble</a>.</p>
+            <p className={styles.label2}>December 2023</p>
+            <p>Building this site with <a href='https://nextjs.org'>Next.js</a>, participating in <a href='https://adventofcode.com'>Advent of Code</a>, working with <a href='https://www.weweb.io'>WeWeb</a> on UI improvements and Components feature </p>
           </div>
 
           <div className={styles.projects}>

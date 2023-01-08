@@ -22,6 +22,7 @@ return (
                 alt="Picture of the author"
                 className={ isHovering ? styles.projectImageHover : styles.projectImage}
                 placeholder="blur"
+                quality="100"
             />
 
             <h2 className={ styles.label2 }>{title}</h2>

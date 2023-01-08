@@ -68,7 +68,7 @@ a {
 }
 
 a:hover{
-  color: #363636;
+  color: #525252;
 }
 
 h1 {
@@ -90,9 +90,9 @@ h2 {
 }
 
 p {
-  color: #0F0F0F;
+  color: #242424;
   font-size: 17px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 26px;
   margin-bottom: 32px;
 }

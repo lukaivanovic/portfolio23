@@ -25,7 +25,7 @@ export default function weweb() {
         <meta name="twitter:image" content="https://uploads-ssl.webflow.com/61e01b31ffff93bff1f722af/6396fe76931bdf13023e6d96_og_image.png"></meta>
       </Head>
       
-      <main className={styles.main}>
+      <main className={styles.main2}>
           <Weweb/>
       </main>
     </>

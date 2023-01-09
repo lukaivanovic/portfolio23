@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Link from "next/link"
 import styles from '../styles/Home.module.css'
-import testPic from '../public/test.png'
 import wewebPic from '../public/weweb.png'
 import Project from '../components/Project'
 import BitcoinPic from '../public/bitcoin-store/01-00.png'

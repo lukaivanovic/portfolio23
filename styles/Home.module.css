@@ -5,6 +5,19 @@
     position: relative;
 }
 
+.content{
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main2{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 160px 32px;
+    position: relative;
+}
+
 .image{
     width: 100%;
     height: auto;
@@ -95,4 +108,23 @@
     align-items: center;
     column-gap: 8px;
     margin-bottom: 48px;
+}
+
+.contentSection{
+    padding-top: 240px
+}
+
+.shotGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.gridImage{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }

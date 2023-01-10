@@ -20,18 +20,21 @@ import img14 from '../public/weweb/weweb-1.webp'
 import img15 from '../public/weweb/weweb-2.webp'
 import img16 from '../public/weweb/weweb-3.webp'
 import img17 from '../public/weweb/weweb-4.webp'
+import img18 from '../public/weweb/colors-2.webp'
+import img19 from '../public/weweb/colors-3.webp'
+import img20 from '../public/weweb/workflows-2.webp'
+import img21 from '../public/weweb/icons-1.webp'
+import img22 from '../public/weweb/icons-2.webp'
+import img23 from '../public/weweb/staging-2.svg'
 import coverPic from '../public/weweb.png'
 import back from '../public/back.svg'
-
-
 
 <div className={styles.content}>
     <BackLink/>
 </div>
 
-
 <div>
-    <Image src={img14} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
+    <Image src={coverPic} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
     <div className={styles.content}>
         # Build user interfaces on top of databases
@@ -80,6 +83,10 @@ import back from '../public/back.svg'
         One of the first things I worked with the WeWeb team is the workflow editor. This is something that hasn’t existed previously and it limited users ability to create complex actions with branching.
 
         The result is the editor in which you can choose from plenty of prebuilt actions, splits and custom code. Users can visually track the decision flow of the action and test it.
+        
+        <Image src={img20} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
+
+        One of the things that we did previously is give names to every action created e.g Action 1.1, Action 1.2. With this release we changes this and an action no longer requires a name. If it doesn’t have one the main title will be action type. If it does one it takes the main title and the action type and contextual information is in the second line.
     </div>
 </div>
 
@@ -128,11 +135,11 @@ import back from '../public/back.svg'
     <div className={styles.content}>
         ## Refreshing the colors
         With a color refresh due, we’ve decided to make some quick improvements until we have the time to this properly. The result is improved contrast and a darker and cleaner dark mode.
-
+        <Image src={img19} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
         WeWeb has a built-in dark mode feature that inverts the color ramps. While this is an easy solution, it can sometimes result in low contrast issues with certain elements. Additionally, using color ramps can lead to design debt, as the colors do not have semantic value.
         <Image src={img1} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
         To address these issues, we are implementing color tokens. Derived from the ramps, these tokens are named based on their function, allowing for more customization and control. For example, you can customize text, background, or other colors in any color mode without affecting other tokens with the same value.
-
+        <Image src={img18} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
         This approach is inspired by the way Figma handles their colors, as described in <a href="https://youtu.be/1DTnojio89Y">this talk</a>.
     </div>
 </div>
@@ -150,11 +157,10 @@ import back from '../public/back.svg'
 
     <div className={styles.content}>
         ## Icons
-        With previously using FA icons, we were looking for something more modern and polished.
-
-        After a lot of time looking at different sets, we've landed on heroicons(v1).
-
+        With previously using FA icons, we were looking for something more modern and polished. After a lot of time looking at different sets, we've landed on heroicons.
+        <Image src={img22} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
         However, we wanted more control over icons on the core parts of the interface like the styling sidebar which is why I spent a lot of time creating custom icons for these sections. Using 1.5px stroke on 20px size achieves perfect balance of visibility and elegance.
+        <Image src={img21} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
     </div>
 </div>
 
@@ -162,6 +168,7 @@ import back from '../public/back.svg'
     <div className={styles.content}>
         ## Staging environment
         <Image src={img5} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
+        <Image src={img23} alt="Project shot" width = "1920" height = "1152" className={styles.image}/>
     </div>
 </div>
 

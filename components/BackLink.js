@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from 'next/image'
 import { useState } from 'react';
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/App.module.css'
 import back from '../public/back.svg'
 
 export default function BackLink() {

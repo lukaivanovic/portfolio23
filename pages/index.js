@@ -31,32 +31,35 @@ export default function Home() {
 
       <main className={styles.main}>
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>About me</h2>
-            <p>22-year old product designer working on startups and early-stage companies. Looking to make an impact by creating useful products with great teams. Currently living in Split, Croatia. Open to EU and US opportunities. Remote and relocation friendly.</p>
+            <Image src={profilePic} className={styles.profileImage}/>
+            <p>Luka Ivanović</p>
+            <h2>Product designer working on startups and early-stage companies</h2>
+            <p>22 years old, currently living in Split, Croatia. Open to EU and US opportunities. Remote and relocation friendly.</p>
           </div>
 
-          <h2 className={styles.sectionTitle}>Featured projects</h2>
-          <div className={styles.projects}>
-            <Project
-              title= "WeWeb"
-              description= "No-code interface builder"
-              url = "weweb"
-              image = {wewebPic2}
-              time = "Apr 2022 - present"
-            />
+          <div className='divider'></div>
+          <div className={styles.section}>
+            <div className={styles.projects}>
+              <Project
+                title= "WeWeb"
+                description= "No-code interface builder"
+                url = "weweb"
+                image = {wewebPic2}
+                time = "Apr 2022 - present"
+              />
 
-            <Project
-              title= "Digital Assets"
-              description= "Trade and store crypto"
-              url = "bitcoin-store"
-              image = {BitcoinPic2}
-              time = "Nov 2021 - Jul 2022"
-            />
+              <Project
+                title= "Digital Assets"
+                description= "Trade and store crypto"
+                url = "bitcoin-store"
+                image = {BitcoinPic2}
+                time = "Nov 2021 - Jul 2022"
+              />
+            </div>
           </div>
           
+          <div className='divider'></div>
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Previous experience</h2>
-
             <Experience
               company = "STAG"
               url = "ivanovicluka.co"
@@ -92,9 +95,11 @@ export default function Home() {
             />
           </div>
 
+          <div className='divider'></div>
           <div className={styles.section}>
-            <h2 className={styles.sectionTitle}>Contact</h2>
-            <p><a>hi@ivanovicluka.co</a></p>
+            <a>hi@ivanovicluka.co</a>
+            <a href='https://twitter.com/lukaivnvc'>twitter</a>
+            <a href='https://dribbble.com/lukaivanovic'>dribbble</a>
           </div>
       </main>
     </>

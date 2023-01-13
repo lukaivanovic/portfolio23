@@ -148,3 +148,8 @@ p {
   padding-bottom: 0px;
   padding-top: 0px
 }
+
+.divider{
+  height: 1px;
+  background-color: #e8e8e8;
+}

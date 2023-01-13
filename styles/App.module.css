@@ -27,7 +27,8 @@
 }
 
 .section{
-    margin-bottom: 80px;
+    margin-top: 56px;
+    margin-bottom: 56px;
 }
 
 .projects{
@@ -36,11 +37,9 @@
     grid-column-start: 1;
     grid-column-end: 2;
     column-gap: 16px;
-    margin-top: 24px
 }
 
 .project{
-    margin-bottom: 80px;
     padding-right: 40px;
     transition: all .2s ease-out;
 }
@@ -129,7 +128,7 @@
 }
 
 .profileImage{
-    border-radius: 20px;
+    border-radius: 100%;
     width: 64px;
     height: 64px;
 }

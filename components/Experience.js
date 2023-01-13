@@ -13,7 +13,7 @@ return (
         </div>
 
         <div>
-            <a target="_blank" href={url} className='label2' >{company}</a>
+            <a target="_blank" href={url} rel="noopener noreferrer" className='label2' >{company}</a>
             <p>{description}</p>
         </div>
         

@@ -31,13 +31,11 @@ export default function Home() {
 
       <main className={styles.main}>
           <div className={styles.section}>
-            <h2>Product design for startups and early-stage companies</h2>
-            <p>22-year old currently living in Split, Croatia. Want to work on well-built and useful products with great teams. Open to EU and US opportunities. Remote and relocation friendly.</p>
-            <p><a>hi@ivanovicluka.co</a> / <a href='https://twitter.com/lukaivnvc'>twitter</a> / <a href='https://dribbble.com/lukaivanovic'>dribbble</a>.</p>
+            <h2 className={styles.sectionTitle}>About me</h2>
+            <p>22-year old product designer working on startups and early-stage companies. Looking to make an impact by creating useful products with great teams. Currently living in Split, Croatia. Open to EU and US opportunities. Remote and relocation friendly.</p>
           </div>
 
-
-          <h2 className={styles.sectionTitle}>Case studies (WIP)</h2>
+          <h2 className={styles.sectionTitle}>Featured projects</h2>
           <div className={styles.projects}>
             <Project
               title= "WeWeb"
@@ -49,15 +47,16 @@ export default function Home() {
 
             <Project
               title= "Digital Assets"
-              description= "Trade and store cryptocurrencies"
+              description= "Trade and store crypto"
               url = "bitcoin-store"
               image = {BitcoinPic2}
               time = "Nov 2021 - Jul 2022"
             />
           </div>
-
+          
           <div className={styles.section}>
-            <h2>Previous experience</h2>
+            <h2 className={styles.sectionTitle}>Previous experience</h2>
+
             <Experience
               company = "STAG"
               url = "ivanovicluka.co"
@@ -68,9 +67,34 @@ export default function Home() {
             <Experience
               company = "WeWeb"
               url = "https://weweb.io"
-              period = "Apr 2023 - Now"
+              period = "2022 - 2023"
               description= "Contract work for a startup in no-code application building space."
             />
+
+            <Experience
+              company = "NDA"
+              period = "2021 - 2022"
+              description= "Contract work on m-banking app for a large bank brand."
+            />
+
+            <Experience
+              company = "ADP"
+              period = "2021 - 2022"
+              url = "https://arasdigital.co"
+              description= "Worked on different mobile apps for clients like Teltech."
+            />
+
+            <Experience
+              company = "Profico"
+              period = "2020 - 2021"
+              url = "https://profi.co"
+              description= "Working on design of large scale data-based web applications."
+            />
+          </div>
+
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>Contact</h2>
+            <p><a>hi@ivanovicluka.co</a></p>
           </div>
       </main>
     </>

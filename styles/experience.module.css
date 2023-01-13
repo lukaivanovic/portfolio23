@@ -1,0 +1,15 @@
+.experience{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 16px;
+    margin-bottom: 24px
+}
+
+.period{
+    margin-right: 40px;
+    white-space: nowrap;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    color: #363636;
+}

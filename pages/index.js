@@ -17,7 +17,7 @@ export default function Home() {
     <>
       
       <Head>
-        <title>ivnvncluka - product design</title>
+        <title>Luka Ivanović</title>
         <meta name="description" content="Looking to work on great products with great teams. Previous clients include corporations, agencies and startups. Open to EU and US opportunities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />

@@ -4,10 +4,34 @@ import styles from '../styles/App.module.css'
 import contentStyles from '../styles/Content.module.css'
 import BackLink from '../components/BackLink'
 import testPic from '../public/test.png'
+import img1 from '../public/weweb/colors-1.webp'
+import img2 from '../public/weweb/colors.webp'
+import img3 from '../public/weweb/icons.webp'
+import img4 from '../public/weweb/navigator.webp'
+import img5 from '../public/weweb/staging.webp'
+import img6 from '../public/weweb/typography-2.webp'
+import img7 from '../public/weweb/typography-3.webp'
+import img8 from '../public/weweb/typography.webp'
+import img9 from '../public/weweb/website-1.webp'
+import img10 from '../public/weweb/website-2.webp'
+import img11 from '../public/weweb/workflows-1.webp'
+import img12 from '../public/weweb/components-1.webp'
+import img13 from '../public/weweb/components-2.webp'
+import img14 from '../public/weweb/weweb-1.webp'
+import img15 from '../public/weweb/weweb-2.webp'
+import img16 from '../public/weweb/weweb-3.webp'
+import img17 from '../public/weweb/weweb-4.webp'
+import img18 from '../public/weweb/colors-2.webp'
+import img19 from '../public/weweb/colors-3.webp'
+import img20 from '../public/weweb/workflows-2.webp'
+import img21 from '../public/weweb/icons-1.webp'
+import img22 from '../public/weweb/icons-2.webp'
+import img23 from '../public/weweb/staging-2.svg'
+import img24 from '../public/weweb/website-3.webp'
 import coverPic from '../public/weweb.png'
 import back from '../public/back.svg'
 
-<Image src='/weweb.png' alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder='blur' blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATSSURBVHgBnVkLcusgDLQ8vv+leq/yaheRZb0r6GMmiQH9fwgnvr6+WkQcfbSfT7TWcn7A3pHruLYzbnikifRyj2gOOZh/zvH5/r3ur5/Pz3q7VyM3lCCVAooBClrhdBkQNxScw73xrkRkYfO5UgI9pOB2DFAJXM1vuud5Ht/f3x+PsOC7hFFYJTjQfDyuvIaCKZp9PvBz/Vai/z5heB09HiuhE4lDBN2r8OA5Knou7mdWszFw7/66OoRMahycmC7xCL4lIxe2qLQLxb4WFf8ziZD6j9XyF2FyXVmYaSjv5Lqx/Auv02+Mj3KNHFlZuf8O6zJjJVBuO2HZ8rdgruwfcCQI4zzxdiphjMVecZ7eYSF35qq68WA5jDd/c0QxYwZorTCV6wCPYVl0dHdHCu7o5dqlYpKT0VmLEjoQP5UPc/4wbRVuudfppRAYIqMDuCot+RkZwl7s4lYwSmkVQgQ7cvDaKKGvZ7WG1mNhdzxTFRumq2hdSvuiQkxjw/r2sK08oOj1ciubWhlaq4OOYZGpKuMOtsL5S4OasJdKOkRAD/W17JRtq8HuVyHEQim+h2jnGXd4hAlWFvhMo9pHBSKo7q+sTcKOZFa80YClIqrsGgWGlzjHVBhwyeVnd8o7I0yhZQR88A9RYknJ+J/C0MT9xdFQNFFh6xGu1YJpa+KO4TqAKqRcPjlFVc5dmLBV7DJco7sBJ3ilRDLH0x/DCnGCrgLIC3GsR8R88gBWFZEXI2cErYaevluPJi5MIGwc83kkz6ZX06hc24UM4dpJWFx3xSN+tUQcRVe2QSwH8jhDn6BTqMBvQxgelVeT3v3B9r/KB+clpUhZtcSeCxcczcG5Z5rLKknzAZNhfO4wwYHeMAoHWzNMITAwQ0D2AOBMJ2TwObKrzBSblKw9jmVCKrqiEOTCdKqvwvZEQGUBRhaEgxTLtZY5xTycMCj8ShaGu5SmWOMV8uZzqNDZPc3Dv8d6yXqPixf51HQEcLS6bW/q8Eywe2ra/3DwSpbXW5TKAikYr6lyDGuhwhc3VMlXc6fEPa6V4GKUSdzM+yq2uJg/bqODEMusE+aXj1qsEFfwq7WJ+VzKM8QaejPhTKEZz1fA4ZIbKin/osxfYDFhuXLxgEbytSZfYi8EScVfjeHu/dt1w5UBeyW1zehTtVSpLRSLD4iOd6S3S9uEYSNewXCp3OWssPDSFI6qawVmr8MA4KfXO8KbsREpD4z8W6FrytAvZE7ah+Dnn6QBKzi/8iF0ATh2RuZICaDmaUEun028NVkJgAMP0aPn4SEMwePJn/j0Q42EkH0SfwAmqnKrFMQ1mgd6jGnxyKvuC2klmLqeOuHTYriO93F3zeXfbJ+QNvzV0M5KAJ5XSajmTbwV7IaYjFV4WUZEGqfTaTJH0GIrCxllRqvhhFFdNQ7130rMt0Kk86zZf6zc4aPCLVuL47eUhqBpr79uoOXRe65fO5Xlu0XiL0zjw02CANwLd0F3WnPHQnrk9dY7ikTuA3Hyavui4wR8CIhOV8gwCkLVLeTJHhy//JyMMTaF0mW55A6AckGGXiBxYYDphuis78LAJaFjWNFehdoqtFOZ022uCLEXqHS2ClfRUQpAMrfj0LKN8stIjFDFO69zhdkZmGNOIaZHMM/eP83xfhAc/NnNAAAAAElFTkSuQmCC' quality="100"/>
+<Image src={coverPic} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 # Build user interfaces on top of databases
 
@@ -17,7 +41,7 @@ Outside of the editor we wanted to improve our visibility on social media and ac
 
 <div className={contentStyles.spacer}></div>
 
-<Image src='/weweb/components-1.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img12} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 ## Components
 
@@ -29,26 +53,24 @@ So we thought about something a bit different - implementing components as seen 
 
 Components are reusable blocks in their simplest form, but you can go very far with them. WeWeb tries to be as close to the code as possible and this is why our components have properties, internal variables and triggers alike the ones in popular frameworks. 
 
-<Image src='/weweb/components-2.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img13} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 In exploration, we went a step further and played with something called Page components. With Page components you could quickly add alert system to all of your pages or change the top navigation to a side menu. 
 
 <div className={contentStyles.spacer}></div>
 
-<Image src='/weweb/workflows-1.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img11} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 ## Workflow editor
-Add reactivity and complex logic
+Achieve complex logic with branching and easily preview your logic
 
-Workflows are action flows that describe reaction to triggers which can be simple clicks on an element in the interface or more complex like page load completion. Once that trigger is activated, the app executes actions that are defined. They are synonymous with functions in code. In code however, you have access to logic statements and loops which was not possible in WeWeb. This was possible in a panel with actions displayed vertically in order of execution. Logic statements have one or multiple actions that are executed depending on any condition and are effectively at the same order of execution.
+One of the first things I worked with the WeWeb team is the workflow editor. This is something that hasn’t existed previously and it limited users ability to create complex actions with branching.
 
-Knowing this, we’ve moved to a canvas-like editor where you can visually see the logic and the flow of the workflow once it’s started. 
+The result is the editor in which you can choose from plenty of prebuilt actions, splits and custom code. Users can visually track the decision flow of the action and test it.
 
-When creating your workflow actions, you can choose from a comprehensive list of prebuilt actions like changing variable value, fetching a collection, applying a time delay and more. Included are already mentioned logic statements, but also custom code for advanced users.
+<Image src={img20} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
-Previously we gave names to every action created: ‘Action 1.1’ for the first one,  ‘Action 1.2’ for the next, ‘Action 1.3’ the one after and so on. With the new editor an action no longer requires a name. In that case, we display the action type. If it does, we display the action type along the contextual information in the second line.
-
-<Image src='/weweb/workflows-2.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+One of the things that we did previously is give names to every action created e.g Action 1.1, Action 1.2. With this release we changes this and an action no longer requires a name. If it doesn’t have one the main title will be action type. If it does one it takes the main title and the action type and contextual information is in the second line.
 
 
 <div className={contentStyles.spacer}></div>
@@ -64,7 +86,7 @@ Previously we gave names to every action created: ‘Action 1.1’ for the first
 
 In August of 2022, we began the process of redesigning and rebuilding our website. We released a first version of the site the same month, but it had not turned out to our expectations. In retrospect, the biggest mistake we made was to not take a direction with the identity. The result was that the website felt generic. 
 
-<Image src='/weweb/website-1.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img24} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 A month later, we made significant improvements by cutting pages that did not meet our quality standards and redesigning the home page. Tracking conversions closely, we made additional changes to the design and content of the site, leading to an increase in conversions. 
 
@@ -72,7 +94,7 @@ However, we continued to strive for improvement and conducted another redesign o
 
 <div className={contentStyles.spacer}></div>
 
-<Image src='/weweb/typography.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img8} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 ## Typography
 
@@ -82,58 +104,58 @@ In the future, our goal is to incorporate elements of our original identity thro
 
 The styles in our design follow a simple scale, with headings ranging from one to six on an almost linear scale. 
 
-<Image src='/weweb/typography-2.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img6} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 For most of the user interface, we use four sizes (10, 12, 14, and 16 pixels) in regular and medium weight.
 
-<Image src='/weweb/typography-3.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img7} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 One factor to consider when comparing Figma and the final product is that Figma uses a custom rendering engine that includes font smoothing, which is similar to anti-aliasing on the web. In our current implementation, we do not use this smoothing, which can result in a slight difference in appearance compared to the designs. However, anti-aliased fonts tend to appear slimmer, so it is necessary to adjust and use the different weights accordingly.
 
 <div className={contentStyles.spacer}></div>
 
-<Image src='/weweb/colors.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img2} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 ## Refreshing the colors
 
 With a color refresh due, we’ve decided to make some quick improvements until we have the time to this properly. The result is improved contrast and a darker and cleaner dark mode.
 
-<Image src='/weweb/colors-1.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img19} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 WeWeb has a built-in dark mode feature that inverts the color ramps. While this is an easy solution, it can sometimes result in low contrast issues with certain elements. Additionally, using color ramps can lead to design debt, as the colors do not have semantic value.
 
-<Image src='/weweb/colors-2.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img1} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 To address these issues, we are implementing color tokens. Derived from the ramps, these tokens are named based on their function, allowing for more customization and control. For example, you can customize text, background, or other colors in any color mode without affecting other tokens with the same value.
 
-<Image src='/weweb/colors-3.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img18} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 This approach is inspired by the way Figma handles their colors, as described in <a href="https://youtu.be/1DTnojio89Y">this talk</a>.
 
 <div className={contentStyles.spacer}></div>
 
-<Image src='/weweb/icons.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img3} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 ## Icons
 
 With previously using FA icons, we were looking for something more modern and polished. After a lot of time looking at different sets, we've landed on heroicons.
 
-<Image src='/weweb/icons-1.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img22} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 However, we wanted more control over icons on the core parts of the interface like the styling sidebar which is why I spent a lot of time creating custom icons for these sections. Using 1.5px stroke on 20px size achieves perfect balance of visibility and elegance.
 
-<Image src='/weweb/icons-2.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img21} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 <div className={contentStyles.spacer}></div>
 
 ## Staging environment
-<Image src='/weweb/staging.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
-<Image src='/weweb/staging-2.svg' alt="Project shot" width = "1920" height = "1152" className={styles.image}/>
+<Image src={img5} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
+<Image src={img23} alt="Project shot" width = "1920" height = "1152" className={styles.image}/>
 
 <div className={contentStyles.spacer}></div>
 
 ## Navigator
-<Image src='/weweb/navigator.webp' alt="Project shot" width = "1920" height = "1152" className={styles.image}  quality="100"/>
+<Image src={img4} alt="Project shot" width = "1920" height = "1152" className={styles.image} placeholder="blur" quality="100"/>
 
 
 

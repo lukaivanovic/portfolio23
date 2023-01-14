@@ -24,6 +24,7 @@
     margin-top: 16px;
     margin-bottom: 32px;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .section{

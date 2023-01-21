@@ -2,13 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/App.module.css'
-import wewebPic from '../public/weweb.png'
-import wewebPic2 from '../public/weweb2.png'
 import Project from '../components/Project'
-import BitcoinPic from '../public/bitcoin-store/01-00.png'
-import profilePic from '../public/profilePic.png'
+import profileImage from '../public/profilePic.png'
 import Experience from '../components/Experience'
-import BitcoinPic2 from '../public/digital-assets.png'
+import experience from '../styles/experience.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,76 +27,80 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <div className={styles.section}>
-            <Image src={profilePic} className={styles.profileImage}/>
-            <p>Luka Ivanović</p>
-            <h2>Product designer working on startups and early-stage companies</h2>
-            <p>22 years old, currently living in Split, Croatia. Open to EU and US opportunities. Remote and relocation friendly.</p>
-          </div>
 
-          <div className='divider'></div>
           <div className={styles.section}>
-            <div className={styles.projects}>
-              <Project
-                title= "WeWeb"
-                description= "No-code interface builder"
-                url = "weweb"
-                image = {wewebPic2}
-                time = "Apr 2022 - present"
-              />
-
-              <Project
-                title= "Digital Assets"
-                description= "Trade and store crypto"
-                url = "bitcoin-store"
-                image = {BitcoinPic2}
-                time = "Nov 2021 - Jul 2022"
+            <div className={styles.profileParent}>
+              <Image
+                src = {profileImage}
+                className = {styles.profileImage}
               />
             </div>
+            <p className='text2'>Luka Ivanović</p>
+            <h1 className='h1'>Designing products for startups and companies</h1>
+            <p className='text2'>Functionalist designer passionate about building stuff. Trying to code here and there. 22 years of age currently residing in Croatia.</p>
           </div>
+
           
-          <div className='divider'></div>
+
           <div className={styles.section}>
-            <Experience
-              company = "STAG"
-              url = "ivanovicluka.co"
-              period = "2020 - 2023"
-              description= "Independent product designer."
-            />
+            <p className='label2'>Work and experience</p>
+            <div className='divider'></div>
+
+            <div className={experience.experience}>
+              <div className={experience.period}>
+                  <span className='text3' >2021 - Now</span>
+              </div>
+
+              <div>
+                  <h2 className='label2'>Independent</h2>
+                  <p className='text2'>Had the chance to work on a growing no-code application builder, largest cryptocurrency wallet in SE Europe and a mobile app for a large financial institution.</p>
+              </div>
+        
+            </div> 
+
+
+            <div className={styles.projects}>
+              <Project title= "WeWeb"  description= "App builder" url = "weweb" image = '/weweb2.png'/>
+
+              <Project title= "Digital Assets" description= "Wallet" url = "bitcoin-store" image = '/digital-assets.png'/>
+            </div>
+            
 
             <Experience
-              company = "WeWeb"
-              url = "https://weweb.io"
-              period = "2022 - 2023"
-              description= "Contract work for a startup in no-code application building space."
-            />
-
-            <Experience
-              company = "NDA"
-              period = "2021 - 2022"
-              description= "Contract work on m-banking app for a large bank brand."
-            />
-
-            <Experience
-              company = "ADP"
+              company = "Product design at ADP"
               period = "2021 - 2022"
               url = "https://arasdigital.co"
-              description= "Worked on different mobile apps for clients like Teltech."
+              description= "Worked on different mobile apps for clients like Teltech"
             />
 
             <Experience
-              company = "Profico"
+              company = "Product design at Profico"
               period = "2020 - 2021"
               url = "https://profi.co"
-              description= "Working on design of large scale data-based web applications."
+              description= "Working on design of large scale data-based web applications"
             />
           </div>
 
-          <div className='divider'></div>
           <div className={styles.section}>
-            <a>hi@ivanovicluka.co</a>
-            <a href='https://twitter.com/lukaivnvc'>twitter</a>
-            <a href='https://dribbble.com/lukaivanovic'>dribbble</a>
+
+            <p className='label2'>Contact</p>
+            <div className='divider'></div>
+
+            <div className={styles.links}>
+              <p>
+                <a target="_blank" href='https://twitter.com/lukaivnvc' rel="noopener noreferrer"> <span className={styles.link}>Twitter </span></a>
+                · 
+                <a target="_blank" href='https://dribbble.com/lukaivanovic' rel="noopener noreferrer"> <span className={styles.link}>Dribbble </span></a>
+                · 
+                <a target="_blank" href='https://www.linkedin.com/in/luka-ivanović-8141a516b/' rel="noopener noreferrer"> <span className={styles.link}>LinkedIn </span></a>
+                · 
+                <a target="_blank" href='https://read.cv/ivnvcluka' rel="noopener noreferrer"> <span className={styles.link}>Read.cv </span></a>
+                · 
+                <a target="_blank" href='https://layers.to/luka' rel="noopener noreferrer"> <span className={styles.link}>Layers.to </span></a>
+              </p>
+            </div>
+
+            <a> <span className={styles.link}>hi@ivanovicluka.co</span></a>
           </div>
       </main>
     </>

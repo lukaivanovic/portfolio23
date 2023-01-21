@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from "next/link"
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/App.module.css'
+import styles from '../styles/Content.module.css'
 import Weweb from '../projects/weweb.mdx'
 
 const inter = Inter({ subsets: ['latin'] })

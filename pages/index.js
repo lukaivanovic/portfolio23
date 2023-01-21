@@ -70,14 +70,14 @@ export default function Home() {
               company = "Product design at ADP"
               period = "2021 - 2022"
               url = "https://arasdigital.co"
-              description= "Worked on different mobile apps for clients like Teltech"
+              description= "Worked on a web application for online fitness sessions, mobile app allowing nutritionists to easily share recipes with clients and an US spam-call blocker mobile app."
             />
 
             <Experience
               company = "Product design at Profico"
               period = "2020 - 2021"
               url = "https://profi.co"
-              description= "Working on design of large scale data-based web applications"
+              description= "Worked on a data-heavy web application for an US state department, website and app for a smart parking startup and all things product for a Nigerian fintech."
             />
           </div>
 

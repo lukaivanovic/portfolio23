@@ -5,6 +5,13 @@
     position: relative;
 }
 
+.main2{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 32px;
+    position: relative;
+}
+
 .video{
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -17,4 +24,21 @@
 
 .spacer{
     height: 180px;
+}
+
+.shotGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    column-gap: 8px;
+    row-gap: 8px;
+    margin-bottom: 160px;
+}
+
+.shotImage{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
 }

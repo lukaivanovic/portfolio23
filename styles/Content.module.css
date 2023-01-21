@@ -36,6 +36,18 @@
     margin-bottom: 160px;
 }
 
+@media (max-width: 1024px) {
+    .shotGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        column-gap: 8px;
+        row-gap: 8px;
+        margin-bottom: 160px;
+    }
+}
+
 .shotImage{
     width: 100%;
     height: auto;

@@ -38,6 +38,10 @@ export default function Home() {
             <p className='text2'>Luka Ivanović</p>
             <h1 className='h1'>Designing products for startups and companies</h1>
             <p className='text2'>Functionalist designer passionate about building stuff. Trying to code here and there. 22 years of age currently residing in Croatia.</p>
+            <div className={styles.projects}>
+              <Project title= "WeWeb"  description= "No-code supercharged app builder" url = "weweb" image = '/weweb2.png'/>
+              <Project title= "Digital Assets" description= "Buy, sell and store cryptocurrencies" url = "bitcoin-store" image = '/digital-assets.png'/>
+            </div>
           </div>
 
           
@@ -57,14 +61,6 @@ export default function Home() {
               </div>
         
             </div> 
-
-
-            <div className={styles.projects}>
-              <Project title= "WeWeb"  description= "App builder" url = "weweb" image = '/weweb2.png'/>
-
-              <Project title= "Digital Assets" description= "Wallet" url = "bitcoin-store" image = '/digital-assets.png'/>
-            </div>
-            
 
             <Experience
               company = "Product design at ADP"

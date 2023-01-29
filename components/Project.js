@@ -16,9 +16,9 @@ export default function Project({title, description, url, image}) {
             <div className={isHovering ? styles.projectHover : styles.project}>
                 <Image
                     src={image}
-                    width='816'
-                    height='516'
-                    alt="Picture of the author"
+                    width='1920'
+                    height='963'
+                    alt="Project preview"
                     className={ isHovering ? styles.projectImageHover : styles.projectImage}
                     quality="100"
                 />

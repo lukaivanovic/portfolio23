@@ -9,25 +9,26 @@
 .project{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: flex-start;
-    padding: 8px;
+    padding: 8px 0px;
     column-gap: 16px;
-    background-color: #F7F7F7;
     border-radius: 8px;
+    transition: all .2s ease-out;
 }
 
 .projectHover{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     justify-content: flex-start;
-    padding: 8px;
+    padding: 8px 0px;
     column-gap: 16px;
-    background-color: #F2F2F2;
     border-radius: 8px;
+    transition: all .2s ease-out;
+    transform: scale(0.98);
 }
 
 @media (max-width: 1024px) {
@@ -77,23 +78,22 @@
 }
 
 .projectImage{
-    width: 180px;
+    width: 100%;
     height: auto;
     flex-grow: 0;
     flex-shrink: 0;
     border-radius: 12px;
-    transition: all .2s ease-out;
+    margin-bottom: 16px;
 }
 
 .projectImageHover{
-    width: 180px;
+    width: 100%;
     height: auto;
     flex-grow: 0;
     flex-shrink: 0;
     border-radius: 12px;
     opacity: 0.98;
-    transition: all .2s ease-out;
-    transform: scale(0.98);
+    margin-bottom: 16px;
 }
 
 @media (max-width: 1024px) {
@@ -132,7 +132,7 @@
 
 .projectArrow{
     position: absolute;
-    top: 12px;
+    bottom: 20px;
     right: 12px;
     color: #666666;
 }

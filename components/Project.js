@@ -25,12 +25,9 @@ export default function Project({title, description, url, image}) {
 
                 <div className={styles.projectDetails}>
                     <h2 className="text3">{title}</h2>
-
-                    <a>
-                        <span className="label2">{description}</span>
-                        
-                    </a>
+                    <span className="label2">{description}</span>
                 </div>  
+
                 <div className={styles.projectArrow}>
                     <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1382_1498)">

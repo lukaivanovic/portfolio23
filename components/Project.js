@@ -21,6 +21,7 @@ export default function Project({title, description, url, image}) {
                     alt="Project preview"
                     className={ isHovering ? styles.projectImageHover : styles.projectImage}
                     quality="100"
+                    priority='true'
                 />
 
                 <div className={styles.projectDetails}>

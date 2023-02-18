@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Content.module.css'
 import BitcoinStore from '../projects/bitcoin-store.mdx'
-import appStyles from "../styles/App.module.css";
 
 const inter = Inter({ subsets: ['latin'] })
 

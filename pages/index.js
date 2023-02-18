@@ -50,7 +50,7 @@ export default function Home() {
           <div className={styles.rm}>
             <p className='text2'>Luka Ivanović</p>
             <h1 className='h1'>Designing products for startups and early-stage companies</h1>
-            <p className='text2'>Functionalist designer passionate about building stuff. Trying to code here and there. 22 years of age currently residing in Croatia.</p>
+            <p className='text2'>Functionalist designer passionate about building stuff. Trying to code here and there. Currently based in the EU.</p>
           </div>
           
 

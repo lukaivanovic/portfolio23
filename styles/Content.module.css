@@ -1,5 +1,5 @@
 .main{
-    max-width: 720px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 160px 32px;
     position: relative;
@@ -15,8 +15,8 @@
 .video{
     width: 100%;
     aspect-ratio: 4 / 3;
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
     border-radius: 12px;
     overflow: hidden;
     -webkit-transform: translateZ(0);

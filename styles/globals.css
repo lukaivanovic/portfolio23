@@ -117,12 +117,12 @@ p {
   background-color: #E0E0E0;
 }
 
-.h1{
-  font-size: 16px;
-  color: #191919;
-  letter-spacing: 0px;
-  line-height: 20px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  margin-top: 20px;
+@media (max-width: 1024px) {
+  @media (max-width: 1024px) {
+    h1{
+      font-size: 2rem;
+      line-height: 2.2rem;
+      letter-spacing: -0.1px;
+    }
+  }
 }

@@ -147,3 +147,9 @@
 .rm{
     padding-right: 32px;
 }
+
+@media (max-width: 1024px) {
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}

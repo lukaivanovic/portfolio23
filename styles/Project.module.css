@@ -7,30 +7,34 @@
 }
 
 .project{
+    background: #FCFCFC;
+    border: 1px solid #EBEBEB;
     position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: flex-start;
-    padding: 8px 0px;
+    justify-content: space-between;
+    padding: 24px;
     column-gap: 16px;
-    border-radius: 8px;
+    border-radius: 16px;
     transition: all .2s ease-out;
+    min-height: 280px;
 }
 
 .projectHover{
+    background: #EBEBEB;
+    border: 1px solid #EBEBEB;
     position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: flex-start;
-    padding: 8px 0px;
+    justify-content: space-between;
+    padding: 24px;
     column-gap: 16px;
-    border-radius: 8px;
+    border-radius: 16px;
     transition: all .2s ease-out;
-    transform: scale(0.98);
+    min-height: 280px;
 }
-
 
 .projectTitle{
     color: black;
@@ -53,21 +57,19 @@
 }
 
 .projectImage{
-    width: 100%;
-    height: auto;
+    width: 56px;
+    height: 56px;
     flex-grow: 0;
     flex-shrink: 0;
-    border-radius: 12px;
-    margin-bottom: 16px;
+    border-radius: 8px;
 }
 
 .projectImageHover{
-    width: 100%;
-    height: auto;
+    width: 40px;
+    height: 40px;
     flex-grow: 0;
     flex-shrink: 0;
     border-radius: 12px;
-    opacity: 0.98;
     margin-bottom: 16px;
 }
 
@@ -84,8 +86,8 @@
 
 .projectArrow{
     position: absolute;
-    bottom: 20px;
-    right: 12px;
+    top: 32px;
+    right: 24px;
     color: #666666;
 }
 

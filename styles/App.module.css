@@ -1,5 +1,5 @@
 .main{
-    max-width: 504px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 160px 32px;
     position: relative;
@@ -108,10 +108,11 @@
 
 .projects{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
-    row-gap: 4px;
+    row-gap: 16px;
+    column-gap: 16px;
     margin-top: 32px;
 }
 

@@ -3,32 +3,36 @@ import Image from 'next/image'
 import { useState } from 'react';
 import styles from '../styles/Project.module.css'
 
-export default function Project({title, description, url, image}) {
+export default function Project({title, description, link, linkName ,url, image}) {
     const [isHovering, setIsHovered] = useState(false);
     const onMouseEnter = () => setIsHovered(true);
     const onMouseLeave = () => setIsHovered(false);
 
     return (
-        <Link href={url}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        >
             <div className={isHovering ? styles.projectHover : styles.project}>
-                <Image
-                    src={image}
-                    width='56'
-                    height='56'
-                    alt="Project preview"
-                    className={styles.projectImage}
-                    quality="100"
-                    priority='true'
-                />
+                <Link href={url}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                >
+                    <div className={styles.projectContent}>
+                        <Image
+                            src={image}
+                            width='56'
+                            height='56'
+                            alt="Project preview"
+                            className={styles.projectImage}
+                            quality="100"
+                            priority='true'
+                        />
 
-                <div className={styles.projectDetails}>
-                    <h2 className="text2">{title}</h2>
-                    <span className="label1">{description}</span>
-                </div>  
-
+                        <div className={styles.projectDetails}>
+                            
+                            <h2 className="text2">{title}</h2>
+                            <span className="label1">{description}</span>
+                        </div>  
+                    </div>
+                </Link>
+                
                 <div className={styles.projectArrow}>
                     <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1382_1498)">
@@ -42,7 +46,16 @@ export default function Project({title, description, url, image}) {
                     </svg>
                 </div>
 
+                <div className={styles.projectLink}>
+                    <a 
+                    target="_blank"
+                    href={link}
+                    onMouseEnter={onMouseLeave}
+                    rel="noopener noreferrer"
+                    >
+                        <span className={styles.link}>{linkName}</span>
+                    </a>
+                </div>
             </div>
-        </Link>
     )
 };

@@ -2,30 +2,31 @@
     background: #FCFCFC;
     border: 1px solid #EBEBEB;
     position: relative;
+    border-radius: 16px;
+    transition: all .2s ease-out;
+}
+
+.projectContent{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
     padding: 24px;
     column-gap: 16px;
-    border-radius: 16px;
-    transition: all .2s ease-out;
     min-height: 280px;
+}
+
+.projectLink{
+    width: 100%;
+    padding: 0px 24px 24px 24px;
 }
 
 .projectHover{
     background: #EBEBEB;
     border: 1px solid #EBEBEB;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-between;
-    padding: 24px;
-    column-gap: 16px;
     border-radius: 16px;
     transition: all .2s ease-out;
-    min-height: 280px;
 }
 
 .projectTitle{
@@ -80,5 +81,20 @@
     position: absolute;
     top: 32px;
     right: 24px;
+    color: #666666;
+}
+
+.link{
+    text-decoration: none;
+    color: #1d1d1d;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+.link:hover{
     color: #666666;
 }

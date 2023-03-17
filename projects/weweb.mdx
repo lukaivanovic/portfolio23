@@ -7,13 +7,18 @@ import testPic from "../public/test.png";
 import coverPic from "../public/weweb.png";
 import back from "../public/back.svg";
 
-WeWeb
+<Image
+  src="/weweb-preview.webp"
+  alt="Project shot"
+  width="1920"
+  height="1152"
+  className={styles.image}
+  quality="100"
+/>
 
-# Build user interfaces on top of databases
+# Build apps without code
 
-WeWeb is visual app-development platform where you can build user interfaces on top of your databases. I’ve started working with the WeWeb team in May of 2022 as their first dedicated designer and my job in the editor was to polish design, think and create new features and challenge the core principles of the software.
-
-Outside of the editor we wanted to improve our visibility on social media and achieve growth with the marketing website.
+WeWeb is visual app-development platform where you can build user interfaces on top of your databases. I’ve started working with the WeWeb team in 2022 as their first designer and to polish design, create and ideate new features and challenge the core principles of the software. We also worked to improve our visibility on social media and achieve growth with the marketing website.
 
 <div className={contentStyles.spacer}></div>
 
@@ -21,13 +26,9 @@ Outside of the editor we wanted to improve our visibility on social media and ac
 
 Ever since WeWeb came to existence in current version, the most requested feature was classes. For a long time the only reason for not implementing this was complexity and development time.
 
-Over time, the team has become less convinced that classes would be the best solution. While they may seem like a natural and clean way to handle styles without code, the process of naming classes and planning styles can become tedious.
+Over time, the team has become less convinced that classes would be the best solution. While they may seem like a natural and clean way to handle styles without code, the process of naming classes and planning styles can become tedious. So we thought about something a bit different - implementing components as seen in Figma and Framer.
 
-So we thought about something a bit different - implementing components as seen in Figma and Framer.
-
-Components are reusable blocks in their simplest form, but you can go very far with them. WeWeb tries to be as close to the code as possible and this is why our components have properties, internal variables and triggers alike the ones in popular frameworks.
-
-In exploration, we went a step further and played with something called Page components. With Page components you could quickly add alert system to all of your pages or change the top navigation to a side menu.
+Components are reusable blocks in their simplest form, but you can go very far with them. WeWeb tries to be as close to the code as possible and this is why our components have properties, internal variables and triggers alike the ones in popular frameworks. In exploration, we went a step further and played with something called Page components. With Page components you could quickly add alert system to all of your pages or change the top navigation to a side menu.
 
 <div className={contentStyles.video}>
   <video width="100%" height="auto" loop autoPlay muted playsinline>
@@ -57,8 +58,6 @@ When creating your workflow actions, you can choose from a comprehensive list of
   </video>
 </div>
 
-Previously we gave names to every action created: ‘Action 1.1’ for the first one, ‘Action 1.2’ for the next, ‘Action 1.3’ the one after and so on. With the new editor an action no longer requires a name. In that case, we display the action type. If it does, we display the action type along the contextual information in the second line.
-
 <div className={contentStyles.spacer}></div>
 
 ## Website
@@ -76,13 +75,11 @@ A month later, we made significant improvements by cutting pages that did not me
   </video>
 </div>
 
-However, we continued to strive for improvement and conducted another redesign of the home page. The new version of the website was finally released in January 2023 and we believe it now meets the standards of a good marketing website.
-
 <div className={contentStyles.spacer}></div>
 
 ## Typography
 
-One of the main trends that we observed at WeWeb is that our identity appeared fun and playful. However, as the company's focus shifted towards developing web applications and attracting a wider range of clients, including enterprises, we wanted to update our image to be more modern and functional. As a result, we decided to use Inter as our typography, which is a popular choice for the web today.
+We observed that our identity appeared fun and playful. However, as the company's focus shifted towards developing web applications and attracting a wider range of clients, including enterprises, we wanted to update our image to be more modern and functional. As a result, we decided to use Inter as our typography, which is a popular choice for the web today.
 
 In the future, our goal is to incorporate elements of our original identity through the use of typography, while still maintaining a professional image. The styles in our design follow a simple scale, with headings ranging from one to six on an almost linear scale. For most of the user interface, we use four sizes (10, 12, 14, and 16 pixels) in regular and medium weight.
 
@@ -107,6 +104,8 @@ WeWeb has a built-in dark mode feature that inverts the color ramps. While this 
 
 To address these issues, we are implementing color tokens. Derived from the ramps, these tokens are named based on their function, allowing for more customization and control. For example, you can customize text, background, or other colors in any color mode without affecting other tokens with the same value.
 
+This approach is inspired by the way Figma handles their colors, as described in <a href="https://youtu.be/1DTnojio89Y">this talk</a>.
+
 <Image
   src="/weweb/colors-1.webp"
   alt="Project shot"
@@ -116,9 +115,13 @@ To address these issues, we are implementing color tokens. Derived from the ramp
   quality="100"
 />
 
-This approach is inspired by the way Figma handles their colors, as described in <a href="https://youtu.be/1DTnojio89Y">this talk</a>.
-
 <div className={contentStyles.spacer}></div>
+
+## Iconography
+
+With previously using FA icons, we were looking for something more modern and polished. After a lot of time looking at different sets, we've landed on heroicons.
+
+However, we wanted more control over icons on the core parts of the interface like the styling sidebar which is why we created custom icons for this.
 
 <Image
   src="/weweb/icons.webp"
@@ -129,30 +132,6 @@ This approach is inspired by the way Figma handles their colors, as described in
   quality="100"
 />
 
-## Iconography
-
-With previously using FA icons, we were looking for something more modern and polished. After a lot of time looking at different sets, we've landed on heroicons.
-
-However, we wanted more control over icons on the core parts of the interface like the styling sidebar which is why we created custom icons for this.
-
 <div className={contentStyles.spacer}></div>
 
-## Other UI (WIP)
-
-<Image
-  src="/weweb/staging.webp"
-  alt="Project shot"
-  width="1920"
-  height="1152"
-  className={styles.image}
-  quality="100"
-/>
-
-<Image
-  src="/weweb/navigator.webp"
-  alt="Project shot"
-  width="1920"
-  height="1152"
-  className={styles.image}
-  quality="100"
-/>
+See more on <a target="_blank" href='https://dribbble.com/lukaivanovic' rel="noopener noreferrer"> <span className={styles.link}>Dribbble </span></a> and <a target="_blank" href='https://twitter.com/lukaivnvc' rel="noopener noreferrer"> <span className={styles.link}>Twitter </span></a>

@@ -108,7 +108,7 @@
 
 .projects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
     row-gap: 16px;

@@ -152,4 +152,8 @@
     .projects{
         grid-template-columns: 1fr;
     }
+
+    .main{
+        padding: 120px 16px;
+    }
 }

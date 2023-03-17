@@ -38,8 +38,8 @@ export default function Home() {
         <div className={styles.rm}>
           <p>Luka Ivanović</p>
           <h1>Product design for startups and early-stage companies</h1>
-          <p>Independent functionalist passionate about building stuff. Designing for four years. Trying to code here and there. Currently based in the EU.</p>
-          <p>Previous work includes an m-banking app for a big European bank, acquired loan fintech and a US spam call blocking mobile app.</p>
+          <p>Independent functionalist passionate about building stuff. Trying to code here and there. Based in the EU.</p>
+          <p>Previous work includes an m-banking app for a large European bank, acquired loan fintech, a US spam call blocking mobile app and the projects below.</p>
         </div>
 
         <div className={styles.projects}>

@@ -43,8 +43,37 @@ export default function Home() {
         </div>
 
         <div className={styles.projects}>
+        
           <Project title= "WeWeb"  description= "No-code supercharged app builder" url = "weweb" image = '/weweb2.png' previewImage = '/weweb-preview.webp' link="https://www.weweb.io" linkName="weweb.io"/>
           <Project title= "Digital Assets" description= "Buy, sell and store cryptocurrencies" url = "bitcoin-store" image = '/digital-assets.png' previewImage = '/bitcoin-preview.webp' link="https://www.bitcoin-store.net" linkName="bitcoin-store.net"/>
+          <div className={styles.socialGrid}>
+          <a className={styles.socialCard} target="_blank" href='https://twitter.com/lukaivnvc' rel="noopener noreferrer">
+            <Image
+                src="/twitter.svg"
+                width='14'
+                height='14'
+                alt="Project preview"
+                className={styles.projectImage}
+                quality="100"
+                priority='true'
+            />
+            <h2 className="text2">Insights to problem solving<br></br><span className="label1">Twitter</span></h2>
+          </a>
+        
+        
+          <a className={styles.socialCard} target="_blank" href='https://twitter.com/lukaivnvc' rel="noopener noreferrer">
+            <Image
+              src="/dribbble.svg"
+              width='14'
+              height='14'
+              alt="Project preview"
+              className={styles.projectImage}
+              quality="100"
+              priority='true'
+            />
+            <h2 className="text2">Interface shots<br></br><span className="label1">Dribbble</span></h2>
+          </a>
+        </div>
         </div>
       
         <div className='divider'></div>

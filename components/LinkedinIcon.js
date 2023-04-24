@@ -7,7 +7,12 @@ export default function Icon() {
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
   return (
-    <Link href="/">
+    <Link
+      target="_blank"
+      href="https://www.linkedin.com/in/ivanovicluka0/"
+      rel="noopener noreferrer"
+      className="link"
+    >
       <div
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}

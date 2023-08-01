@@ -1,13 +1,35 @@
 import Head from 'next/head';
-import { Inter } from '@next/font/google';
 import styles from '../styles/App.module.css';
 import Nav from '../components/Nav';
 import About from '../components/About';
+import { useState, useEffect } from 'react';
 import ProjectsGrid from '../components/ProjectsGrid';
-
-const inter = Inter({ subsets: ['latin'] });
+import ProjectModal from '../components/ProjectModal';
 
 export default function Home() {
+  const [modalOpened, setIsModalOpened] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpened(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpened(false);
+  };
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+    window.addEventListener('keydown', handleEsc);
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -32,6 +54,13 @@ export default function Home() {
         ></meta>
       </Head>
       <Nav></Nav>
+      {modalOpened ? (
+        <div className={styles.modalParent}>
+          <div className={styles.modalOverlay} onClick={closeModal}></div>
+          <ProjectModal></ProjectModal>
+        </div>
+      ) : null}
+
       <div className={styles.main}>
         <About></About>
         <ProjectsGrid></ProjectsGrid>

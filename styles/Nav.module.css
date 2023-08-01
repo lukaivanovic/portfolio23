@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto;
+  padding: 8px 32px;
+  background-color: var(--bg-primary);
+}
+
+.navParent {
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.profileImage {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+}

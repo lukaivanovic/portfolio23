@@ -1,18 +1,19 @@
-import styles from '../styles/App.module.css';
+import styles from '../styles/About.module.css';
+import Image from 'next/image';
 
 export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.aboutContent}>
-        <h1>Software designer for startups and early-stage companies</h1>
-        <p>
-          Solving complex UX problems, conceptualizing new ideas and creating
-          accompanying interfaces. Coding when not designing.
+        <h1>Making and designing software.</h1>
+        <p className="contentText">
+          A product designer trying to build impressive software. Enjoy wearing
+          many hats including coding, product strategy, support, marketing.
         </p>
-        <p>
-          Previously worked on a m-banking app for an European bank, a growing
-          no-code app builder and largest cryptocurrency exchange in SE Europe.
-        </p>
+        <div className={styles.availability}>
+          <Image src="/availableIcon.svg" width="16" height="16"></Image>
+          <span className="label">Available for inquries</span>
+        </div>
       </div>
     </div>
   );

@@ -1,23 +1,14 @@
 .project {
   background: #ffffff;
-  border: 1px solid #ebebeb;
   position: relative;
-  border-radius: 12px;
   transition: all 0.2s ease-out;
-  overflow: hidden;
 }
 
 .projectHover {
   background: #ffffff;
-  border: 1px solid #ebebeb;
   position: relative;
-  border-radius: 12px;
   transition: all 0.2s ease-out;
-  -webkit-box-shadow: 0px 4px 12px -2px rgba(28, 28, 28, 0.16);
-  -moz-box-shadow: 0px 4px 12px -2px rgba(28, 28, 28, 0.16);
-  box-shadow: 0px 4px 12px -2px rgba(28, 28, 28, 0.16);
   transform: translateY(-4px);
-  overflow: hidden;
 }
 
 .projectContent {
@@ -31,15 +22,16 @@
 }
 
 .projectLink {
-  width: 100%;
-  background-color: #fafafa;
+  position: absolute;
+  bottom: 24px;
+  right: 0px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 12px 24px;
-  border-top: 1px solid #ebebeb;
   font-size: 0.8rem;
   column-gap: 4px;
+  z-index: 989;
 }
 
 .projectLink:hover {
@@ -67,28 +59,24 @@
 }
 
 .projectImage {
-  width: 48px;
+  width: 40px;
   border: 1px #ebebeb solid;
-  padding: 3px;
-  height: 48px;
+  padding: 8px;
+  height: 40px;
   flex-grow: 0;
   flex-shrink: 0;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
-  -moz-box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
-  box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
+  border-radius: 16px;
 }
 
 .projectImageHover {
   width: 40px;
   height: 40px;
   flex-grow: 0;
+  padding: 8px;
+  border: 1px #ebebeb solid;
   flex-shrink: 0;
-  border-radius: 12px;
+  border-radius: 16px;
   margin-bottom: 16px;
-  -webkit-box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
-  -moz-box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
-  box-shadow: 0px 12px 24px -6px rgba(28, 28, 28, 0.08);
 }
 
 .projectLeft {
@@ -96,20 +84,21 @@
 }
 
 .projectDetails {
-  padding: 24px;
+  flex-grow: 1;
+  padding: 16px 32px 16px 8px;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: flex-start;
   column-gap: 12px;
-  align-items: center;
 }
 
 .projectInformation {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
+  align-content: center;
+  justify-content: flex-start;
+  column-gap: 8px;
 }
 
 .projectArrow {
@@ -136,7 +125,19 @@
 
 .projectPreview {
   width: 100%;
-  height: auto;
+  height: 320px;
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
+  object-fit: cover;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+}
+
+.projectPreview:hover {
+  background-color: #fafafa;
+  box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.06),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.12);
 }
 
 .icon {

@@ -1,56 +1,56 @@
-.main{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 160px 32px;
-    position: relative;
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 160px 32px;
+  position: relative;
 }
 
-.main2{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0px 32px;
-    position: relative;
+.main2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 32px;
+  position: relative;
 }
 
-.video{
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    margin-top: 2.4rem;
-    margin-bottom: 2.4rem;
-    border-radius: 12px;
-    overflow: hidden;
-    -webkit-transform: translateZ(0);
+.video {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
 }
 
-.spacer{
-    height: 100px;
+.spacer {
+  height: 100px;
 }
 
-.shotGrid{
+.shotGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-bottom: 160px;
+}
+
+@media (max-width: 1024px) {
+  .shotGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
     column-gap: 8px;
     row-gap: 8px;
     margin-bottom: 160px;
+  }
 }
 
-@media (max-width: 1024px) {
-    .shotGrid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        column-gap: 8px;
-        row-gap: 8px;
-        margin-bottom: 160px;
-    }
-}
-
-.shotImage{
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    overflow: hidden;
+.shotImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
 }

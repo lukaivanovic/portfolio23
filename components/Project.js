@@ -10,16 +10,27 @@ export default function Project({
   link,
   linkName,
   url,
-  image,
+  logo,
   previewImage,
 }) {
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
 
+  // const something = document.querySelector('something');
+
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={isHovering ? styles.projectHover : styles.project}>
-      <Link href={url} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+      <Link
+        href={url}
+        onClick={handleClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
         <div className={styles.projectContent}>
           <Image
             src={previewImage}
@@ -32,33 +43,13 @@ export default function Project({
           />
 
           <div className={styles.projectDetails}>
-            <Image
-              src={image}
-              width="56"
-              height="56"
-              alt="Project preview"
-              className={styles.projectImage}
-              quality="100"
-              priority="true"
-            />
             <div className={styles.projectInformation}>
-              <h2 className="text2">{title}</h2>
-              <span className="label1">{description}</span>
+              <span className="text">{title}</span>
+              <h3>{description}</h3>
             </div>
           </div>
         </div>
       </Link>
-
-      <a
-        className={styles.projectLink}
-        target="_blank"
-        href={link}
-        onMouseEnter={onMouseLeave}
-        rel="noopener noreferrer"
-      >
-        <span>Visit website</span>
-        <Image src={back} width="14" height="14" className={styles.icon} />
-      </a>
     </div>
   );
 }

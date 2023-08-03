@@ -41,15 +41,18 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
-        <meta name="og:type" content="website"></meta>
-        <meta name="og:title" content="Making and designing software"></meta>
+        <meta property="og:type" content="website"></meta>
         <meta
-          name="og:description"
+          property="og:title"
+          content="Making and designing software"
+        ></meta>
+        <meta
+          property="og:description"
           content="A product designer trying to build impressive software. Enjoy wearing
           many hats including coding, product strategy, support, marketing."
         ></meta>
         <meta
-          name="og:image"
+          property="og:image"
           content="https://res.cloudinary.com/devcwma6c/image/upload/v1691058345/og-image_qfd8pw.png"
         ></meta>
         <meta name="twitter:card" content="summary"></meta>

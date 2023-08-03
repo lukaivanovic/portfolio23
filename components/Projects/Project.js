@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import styles from '../styles/Project.module.css';
-import back from '../public/linkIcon.svg';
+import styles from '../../styles/Project.module.css';
 
 export default function Project({
   title,

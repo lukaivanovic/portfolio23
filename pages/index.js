@@ -3,8 +3,9 @@ import styles from '../styles/App.module.css';
 import Nav from '../components/Nav';
 import About from '../components/About';
 import { useState, useEffect } from 'react';
-import ProjectsGrid from '../components/ProjectsGrid';
-import ProjectModal from '../components/ProjectModal';
+import ProjectsGrid from '../components/Projects/ProjectsGrid';
+import LinksGrid from '../components/Link/LinksGrid';
+import ProjectModal from '../components/Projects/ProjectModal';
 
 export default function Home() {
   const [modalOpened, setIsModalOpened] = useState(false);
@@ -41,6 +42,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
         <meta name="og:type" content="website"></meta>
+        <meta
+          name="og:image"
+          content="https://res.cloudinary.com/devcwma6c/image/upload/v1691058345/og-image_qfd8pw.png"
+        ></meta>
         <meta name="twitter:card" content="summary"></meta>
         <meta name="twitter:site" content="@lukaivnvc"></meta>
         <meta name="twitter:title" content="ivnvncluka - product design"></meta>
@@ -50,7 +55,7 @@ export default function Home() {
         ></meta>
         <meta
           name="twitter:image"
-          content="https://uploads-ssl.webflow.com/61e01b31ffff93bff1f722af/6396fe76931bdf13023e6d96_og_image.png"
+          content="https://res.cloudinary.com/devcwma6c/image/upload/v1691058345/og-image_qfd8pw.png"
         ></meta>
       </Head>
       <Nav></Nav>
@@ -64,6 +69,7 @@ export default function Home() {
       <div className={styles.main}>
         <About></About>
         <ProjectsGrid></ProjectsGrid>
+        <LinksGrid></LinksGrid>
       </div>
     </>
   );

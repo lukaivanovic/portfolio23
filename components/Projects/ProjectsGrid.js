@@ -1,9 +1,7 @@
-import styles from '../styles/App.module.css';
-import Project from '../components/Project';
+import styles from '../../styles/App.module.css';
+import Project from './Project';
 import { useState, useEffect } from 'react';
 import ProjectModal from './ProjectModal';
-import Weweb from '../projects/weweb.mdx';
-import BitcoinStore from '../projects/bitcoin-store.mdx';
 
 export default function ProjectsGrid() {
   const [modalOpened, setIsModalOpened] = useState(false);

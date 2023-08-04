@@ -33,22 +33,25 @@ export default function LinksGrid() {
     };
   }, []);
   return (
-    <div className={styles.links}>
-      <div>
-        <LinkItem
-          title="Figma to HTML plugin"
-          description="Easily convert Figma designs to HTML and WeWeb. Built with TypeScript."
-          url="https://www.figma.com/community/plugin/1227257007623431685"
-          previewImage="/akkio.webp"
-        />
-      </div>
-      <div>
-        <LinkItem
-          title="WeWeb Academy"
-          description="Platform for learning WeWeb through courses and lessons. Built with XANO and WeWeb."
-          url="https://academy.weweb.io/"
-          previewImage="/weweb-o.webp"
-        />
+    <div className="section">
+      <span className="contentText">Projects</span>
+      <div className={styles.links}>
+        <div>
+          <LinkItem
+            title="Figma to HTML plugin"
+            description="Easily convert Figma designs to HTML and WeWeb. Built with TypeScript"
+            url="https://www.figma.com/community/plugin/1227257007623431685"
+            previewImage="/figma-plugin.png"
+          />
+        </div>
+        <div>
+          <LinkItem
+            title="WeWeb Academy"
+            description="Platform for learning WeWeb through courses and lessons. Built with XANO and WeWeb"
+            url="https://academy.weweb.io/"
+            previewImage="/weweb-academy.png"
+          />
+        </div>
       </div>
     </div>
   );

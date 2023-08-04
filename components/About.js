@@ -12,7 +12,7 @@ export default function About() {
         </p>
         <div className={styles.availability}>
           <Image src="/availableIcon.svg" width="16" height="16"></Image>
-          <span className="label">Available for inquries</span>
+          <span className="label">Available for inquiries</span>
         </div>
       </div>
     </div>

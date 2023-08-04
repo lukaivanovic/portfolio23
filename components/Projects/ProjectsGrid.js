@@ -34,51 +34,54 @@ export default function ProjectsGrid() {
     };
   }, []);
   return (
-    <div className={styles.projects}>
-      {modalOpened ? (
-        <div className={styles.modalParent}>
-          <div className={styles.modalOverlay} onClick={closeModal}></div>
-          <div
-            className={`${styles.modalContent} ${
-              modalOpened ? styles.modalParentSlideUp : null
-            }`}
-          >
-            <ProjectModal name={modalPage}></ProjectModal>
+    <div className="section">
+      <span className="contentText">Work</span>
+      <div className={styles.projects}>
+        {modalOpened ? (
+          <div className={styles.modalParent}>
+            <div className={styles.modalOverlay} onClick={closeModal}></div>
+            <div
+              className={`${styles.modalContent} ${
+                modalOpened ? styles.modalParentSlideUp : null
+              }`}
+            >
+              <ProjectModal name={modalPage}></ProjectModal>
+            </div>
           </div>
+        ) : null}
+        <div>
+          <Project
+            title="Akkio"
+            description="Predictive AI for Analysts"
+            url=""
+            logo="/logos/akkio.svg"
+            previewImage="/akkio.webp"
+            link="https://www.akkio.com"
+            linkName="weweb.io"
+          />
         </div>
-      ) : null}
-      <div>
-        <Project
-          title="Akkio"
-          description="AI-Powered Analytics Platform"
-          url=""
-          logo="/logos/akkio.svg"
-          previewImage="/akkio.webp"
-          link="https://www.akkio.com"
-          linkName="weweb.io"
-        />
-      </div>
-      <div onClick={() => openModal('weweb')}>
-        <Project
-          title="WeWeb"
-          description="No-code front-end builder"
-          url="weweb"
-          logo="/logos/weweb.svg"
-          previewImage="/weweb-o.webp"
-          link="https://www.weweb.io"
-          linkName="weweb.io"
-        />
-      </div>
-      <div onClick={() => openModal('bitcoin')}>
-        <Project
-          title="Digital Assets"
-          description="Crypto Wallet & Exchange"
-          url="bitcoin-store"
-          logo="/logos/digital-assets.svg"
-          previewImage="/bitcoin-preview.webp"
-          link="https://www.bitcoin-store.net"
-          linkName="bitcoin-store.net"
-        />
+        <div onClick={() => openModal('weweb')}>
+          <Project
+            title="WeWeb"
+            description="No-code front-end builder"
+            url="weweb"
+            logo="/logos/weweb.svg"
+            previewImage="/weweb-o.webp"
+            link="https://www.weweb.io"
+            linkName="weweb.io"
+          />
+        </div>
+        <div onClick={() => openModal('bitcoin')}>
+          <Project
+            title="Digital Assets"
+            description="Crypto Wallet & Exchange"
+            url="bitcoin-store"
+            logo="/logos/digital-assets.svg"
+            previewImage="/bitcoin-preview.webp"
+            link="https://www.bitcoin-store.net"
+            linkName="bitcoin-store.net"
+          />
+        </div>
       </div>
     </div>
   );

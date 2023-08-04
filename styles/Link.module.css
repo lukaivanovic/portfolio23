@@ -5,7 +5,7 @@
   grid-column-end: 3;
   row-gap: 24px;
   column-gap: 24px;
-  margin-top: 32px;
+  margin-top: 16px;
   width: 100%;
 }
 
@@ -13,10 +13,28 @@
   background-color: #fff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
+  padding: 16px;
 }
 
 .linkHover {
   background-color: #fafafa;
   border: 1px solid #ebebeb;
   border-radius: 8px;
+  padding: 16px;
+}
+
+.linkPreview {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.linkContent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0px;
+  row-gap: 16px;
+  min-height: 280px;
 }

@@ -25,11 +25,20 @@ export default function LinkItem({
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        <div className={styles.projectContent}>
+        <div className={styles.linkContent}>
+          <Image
+            src={previewImage}
+            width="1860"
+            height="984"
+            alt="Project preview"
+            className={styles.linkPreview}
+            quality="100"
+            priority="true"
+          />
           <div className={styles.projectDetails}>
             <div className={styles.projectInformation}>
-              <h3>{title}</h3>
-              <span className="text">{description}</span>
+              <h4>{title}</h4>
+              <span className="contentText">{description}</span>
             </div>
           </div>
         </div>

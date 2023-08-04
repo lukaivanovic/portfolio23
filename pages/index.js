@@ -6,6 +6,10 @@ import { useState, useEffect } from 'react';
 import ProjectsGrid from '../components/Projects/ProjectsGrid';
 import LinksGrid from '../components/Link/LinksGrid';
 import ProjectModal from '../components/Projects/ProjectModal';
+import TwitterIcon from '../components/Icons/TwitterIcon';
+import GithubIcon from '../components/Icons/GithubIcon';
+import LinkedinIcon from '../components/Icons/LinkedinIcon';
+import DribbbleIcon from '../components/Icons/DribbbleIcon';
 
 export default function Home() {
   const [modalOpened, setIsModalOpened] = useState(false);
@@ -78,6 +82,15 @@ export default function Home() {
       <div className={styles.main}>
         <About></About>
         <ProjectsGrid></ProjectsGrid>
+        <LinksGrid></LinksGrid>
+        <div className="section">
+          <div className={styles.socialLinks}>
+            <TwitterIcon></TwitterIcon>
+            <GithubIcon></GithubIcon>
+            <LinkedinIcon></LinkedinIcon>
+            <DribbbleIcon></DribbbleIcon>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,73 @@
+<html>
+  <head></head>
+  <body>
+    <div class="noise"></div>
+    <div class="ellipse"></div>
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noise">
+        <feTurbulence id="turbulence" baseFrequency="1.9"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="400"></feDisplacementMap>
+      </filter>
+
+      <rect width="100%" height="100%" filter="url(#noise)" />
+    </svg>
+  </body>
+</html>
+
+<style>
+  @property --a {
+    syntax: '<percentage>'; /* its type */
+    inherits: false;
+    initial-value: 50%; /* the initial value */
+  }
+
+  body {
+    background-color: #011111;
+  }
+
+  .ellipse {
+    margin: 120px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+
+    opacity: 50%;
+
+    background: radial-gradient(
+      ellipse 200% 100% at bottom,
+      rgba(2, 18, 18, 0) var(--a),
+      rgba(153, 255, 224, 0.2) 72%,
+      rgba(242, 255, 247, 0.8) 100%
+    );
+
+    filter: blur(24px);
+
+    animation: slidein 10s ease infinite;
+  }
+
+  .noise {
+    mix-blend-mode: color-dodge;
+    opacity: 0.02;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+
+    background: repeating-linear-gradient(#111, #111 50%, white 50%, white);
+    background-size: 5px 5px;
+    filter: url(#noise);
+  }
+
+  @keyframes slidein {
+    from {
+      --a: 90%;
+    }
+    50% {
+      --a: 72%;
+    }
+    to {
+      --a: 90%;
+    }
+  }
+</style>

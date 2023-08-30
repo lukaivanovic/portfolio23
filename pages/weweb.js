@@ -8,7 +8,7 @@ export default function weweb() {
   return (
     <>
       <Head>
-        <title>Luka Ivanovic - Product Design</title>
+        <title>Luka Ivanovic - Product Designer</title>
         <meta
           name="description"
           content="Looking to work on great products with great teams. Previous clients include corporations, agencies and startups. Open to EU and US opportunities."

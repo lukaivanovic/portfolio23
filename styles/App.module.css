@@ -1,5 +1,5 @@
 .main {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0px;
   padding: 0px 32px 80px 32px;
   position: relative;
@@ -108,7 +108,7 @@
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-start: 1;
   grid-column-end: 3;
   row-gap: 24px;

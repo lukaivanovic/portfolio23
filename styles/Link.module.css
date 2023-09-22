@@ -1,6 +1,6 @@
 .links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-start: 1;
   grid-column-end: 3;
   row-gap: 24px;
@@ -14,6 +14,7 @@
   border: 1px solid #ebebeb;
   border-radius: 8px;
   padding: 16px;
+  height: 72px;
 }
 
 .linkHover {
@@ -21,19 +22,19 @@
   border: 1px solid #ebebeb;
   border-radius: 8px;
   padding: 16px;
+  height: 72px;
 }
 
 .linkPreview {
-  max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .linkContent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0px;
   row-gap: 16px;
   min-height: 280px;

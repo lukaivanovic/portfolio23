@@ -5,36 +5,13 @@ import About from '../components/About';
 import { useState, useEffect } from 'react';
 import ProjectsGrid from '../components/Projects/ProjectsGrid';
 import LinksGrid from '../components/Link/LinksGrid';
-import ProjectModal from '../components/Projects/ProjectModal';
 import TwitterIcon from '../components/Icons/TwitterIcon';
 import GithubIcon from '../components/Icons/GithubIcon';
 import LinkedinIcon from '../components/Icons/LinkedinIcon';
 import DribbbleIcon from '../components/Icons/DribbbleIcon';
+import LinkItem from '../components/Link/LinkItem';
 
 export default function Home() {
-  const [modalOpened, setIsModalOpened] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpened(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpened(false);
-  };
-
-  useEffect(() => {
-    const handleEsc = (event) => {
-      if (event.key === 'Escape') {
-        closeModal();
-      }
-    };
-    window.addEventListener('keydown', handleEsc);
-
-    return () => {
-      window.removeEventListener('keydown', handleEsc);
-    };
-  }, []);
-
   return (
     <>
       <Head>
@@ -72,17 +49,38 @@ export default function Home() {
         ></meta>
       </Head>
       <Nav></Nav>
-      {modalOpened ? (
-        <div className={styles.modalParent}>
-          <div className={styles.modalOverlay} onClick={closeModal}></div>
-          <ProjectModal></ProjectModal>
-        </div>
-      ) : null}
 
       <div className={styles.main}>
         <About></About>
         <ProjectsGrid></ProjectsGrid>
-        <LinksGrid></LinksGrid>
+        <div className="section">
+          <span className="contentText">Projects</span>
+          <span className="contentText">
+            Stuff that I built for myself or others.
+          </span>
+          <div className={styles.links}>
+            <div>
+              <LinkItem
+                title="Figma to HTML plugin"
+                description="Easily convert Figma designs to HTML and WeWeb. Built with TypeScript"
+                url="https://www.figma.com/community/plugin/1227257007623431685"
+                previewImage="/figma-plugin.png"
+              />
+            </div>
+            <div>
+              <LinkItem
+                title="WeWeb Academy"
+                description="Platform for learning WeWeb through courses and lessons. Built with XANO and WeWeb"
+                url="https://academy.weweb.io/"
+                previewImage="/weweb-academy.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="section">
+          <span className="contentText">Blog</span>
+          Empty for now.
+        </div>
         <div className="section">
           <div className={styles.socialLinks}>
             <TwitterIcon></TwitterIcon>

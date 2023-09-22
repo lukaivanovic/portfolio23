@@ -11,44 +11,57 @@ export default function Project({
   url,
   logo,
   previewImage,
+  images,
 }) {
-  const [isHovering, setIsHovered] = useState(false);
-  const onMouseEnter = () => setIsHovered(true);
-  const onMouseLeave = () => setIsHovered(false);
-
-  // const something = document.querySelector('something');
-
-  const handleClick = (e) => {
-    e.preventDefault();
-  };
-
   return (
-    <div className={isHovering ? styles.projectHover : styles.project}>
-      <Link
-        href={url}
-        onClick={handleClick}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      >
-        <div className={styles.projectContent}>
-          <Image
-            src={previewImage}
-            width="1860"
-            height="984"
-            alt="Project preview"
-            className={styles.projectPreview}
-            quality="100"
-            priority="true"
-          />
-
-          <div className={styles.projectDetails}>
-            <div className={styles.projectInformation}>
-              <span className="text">{title}</span>
-              <h3>{description}</h3>
-            </div>
+    <div className={styles.project}>
+      <div className={styles.projectContent}>
+        <div className={styles.projectDetails}>
+          <div className={styles.projectInformation}>
+            <span className="text">{title}</span>
+            <h3>{description}</h3>
           </div>
         </div>
-      </Link>
+      </div>
+      <Image
+        src={previewImage}
+        width="1860"
+        height="984"
+        alt="Project preview"
+        className={styles.projectPreview}
+        quality="100"
+        priority="true"
+      />
+      <div className={styles.projectInformation}>
+        <span className="text">{title}</span>
+        <h3>{description}</h3>
+      </div>
+      <Image
+        src={previewImage}
+        width="1860"
+        height="984"
+        alt="Project preview"
+        className={styles.projectPreview}
+        quality="100"
+        priority="true"
+      />
+      <div className={styles.projectInformation}>
+        <span className="text">{title}</span>
+        <h3>{description}</h3>
+      </div>
+      <Image
+        src={previewImage}
+        width="1860"
+        height="984"
+        alt="Project preview"
+        className={styles.projectPreview}
+        quality="100"
+        priority="true"
+      />
+      <div className={styles.projectInformation}>
+        <span className="text">{title}</span>
+        <h3>{description}</h3>
+      </div>
     </div>
   );
 }
